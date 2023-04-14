@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #000000;
+}
+
+.filter-item {
+    margin: 0;
+    padding: 0;
+    border: none;
+    width: 260px;
+    margin: 50px auto;
+}
+
+.range-filter {
+    width: 95px;
+    margin-top: 100px;
+}
+
+.filter-item legend {
+    font-size: 17px;
+    line-height: 30px;
+    font-weight: 700;
+}
+
+.range-controls {
+    position: relative;
+    height: 41px;
+    background-color: #F7F3EC;
+    border-radius: 5px;
+    width: 200px;
+    margin-bottom: 9px;
+    padding-top: 39px;
+    padding-left: 20px;
+}
+
+.range-controls .scale {
+    height: 2px;
+    width: 180px;
+    background: #d7dcde;
+}
+
+.range-controls .bar {
+    width: 70%;
+    height: 2px;
+    background: #63A63E;
+}
+
+.range-controls .toggle {
+    position: absolute;
+    top: 31px;
+    left: 0;
+    width: 4px;
+    height: 4px;
+    padding: 0;
+    border: 8px solid #ffffff;
+    background-color: #ababab;
+    border-radius: 50%;
+    box-shadow: 0 2px 1px 0 #cfcfcf;
+    cursor: pointer;
+}
+
+.range-controls .toggle-min {
+    left: 18px;
+}
+
+.range-controls .toggle-max {
+    left: 134px;
+}
+
+.price-controls {
+    display: flex;
+    justify-content: space-between;
+    width: 220px;
+}
+
+.price-controls input {
+    width: 95px;
+    height: 38px;
+    text-align: center;
+    color: #283136;
+    border: none;
+    border-radius: 5px;
+    background: F7F3EC;
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 17px;
+}
+
+.number {
+    display: flex;
+    justify-content: space-between;
+}

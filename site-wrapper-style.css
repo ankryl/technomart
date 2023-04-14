@@ -1,0 +1,23 @@
+html,
+body {
+    /* Для демонстрации */
+    min-height: 100vh;
+    margin: 0;
+}
+
+.site-wrapper {
+    min-width: 620px;
+    background-color: #849d8f;
+    background-image: url("../Техномарт/img/decorations/perforatori.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    /* Для демонстрации */
+    min-height: 100vh;
+}
+
+.slider {
+    width: 620px;
+    height: 104px;
+    margin: 0 auto;
+    padding: 23px 356px 16px 24px;
+}
