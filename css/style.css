@@ -408,6 +408,7 @@ address p {
     display: inline-block;
     content: "";
     position: absolute;
+    pointer-events: none;
     right: -227px;
     top: 0px;
     background-image: url(../img/decorations/Rectangle\ 15.svg);
@@ -532,6 +533,18 @@ h3 {
 
 .list-services {
     background-color: var(--light-violet);
+    position: relative;
+}
+
+.list-services::before{
+    position: absolute;
+    content: "";
+    background-image: url(../img/decorations/line-shadow.png);
+    left: 96%;
+    top: -25%;
+    width: 10px;
+    height: 279px;
+    background-repeat: no-repeat;
 }
 
 .item-service {
@@ -693,7 +706,6 @@ h3 {
     display: flex;
     list-style: none;
     justify-content: space-around;
-    margin-up: 37px;
 }
 
 .footer-address {
@@ -701,13 +713,16 @@ h3 {
     line-height: 24px;
 }
 
-.footer-navigation-bottom {
-    color: var(--gold);
+.footer-navigation-bottom{
     font-size: 18px;
     line-height: 24px;
     display: flex;
     list-style: none;
     justify-content: space-around;
+}
+
+.footer-navigation-bottom a{
+    color: var(--gold);
 }
 
 .container-full-width-bar {
@@ -858,9 +873,12 @@ h3 {
     line-height: 24px;
 }
 
-.item-nav:hover,
-.item-nav-bottom:hover {
+.item-nav:hover {
     text-decoration: underline;
+}
+
+.item-nav-bottom:hover{
+    text-decoration: underline gold;
 }
 
 .item-nav:active,
@@ -1034,6 +1052,7 @@ h3 {
 
 .about-item-product {
     color: var(--black);
+    
 }
 
 .about-item-product-9000 {
@@ -1661,4 +1680,25 @@ form.form-heading-style {
     80% {
         transform: translateX(10px);
     }
+}
+
+.button-sale-bookmarks{
+    width: 144px;
+    height: 128px;
+    z-index: 1;
+    display: none;
+}
+
+.about-item-test{
+  display: block;
+}
+
+.about-item-test::hover{
+    display: none;
+}
+
+.button-sale-bookmarks::hover{
+    width: 144px;
+    height: 128px;
+   display: block;
 }

@@ -214,7 +214,11 @@
                 </li>
                 <li class="item-product item-product--new ">
                     <a href=" " class="about-item-product ">
-                        <p> <img src="img/cataloge/bfg6000 w144 h128.png " width="144 " height="128 " class="about-item-product-6000 ">Перфоратор BOSCH<br>BFG 6000 <br> <del class="delete-price ">30 500 Р.</del><button type="button " class="button-buy ">25 500 Р.</button></p>
+                        <p> <img src="img/cataloge/bfg6000 w144 h128.png " width="144 " height="128 " class="about-item-product-6000 about-item-test">
+                                <span class="item-product button-sale-bookmarks">
+                    <button type=" " class="buy "> <img src="img/icons/icon-cart 15 15.svg " alt=" "> КУПИТЬ</button>
+                    <button type=" " class="in-bookmar ">В ЗАКЛАДКИ</button>
+                </span> Перфоратор BOSCH<br>BFG 6000 <br> <del class="delete-price ">30 500 Р.</del><button type="button " class="button-buy ">25 500 Р.</button></p>
                     </a>
                 </li>
                 <li class="item-product ">
@@ -249,10 +253,7 @@
                     </a>
                 </li>
 
-                <!-- <li class="item-product ">
-                    <button type=" " class="buy "> <img src="img/icons/icon-cart 15 15.svg " alt=" "> КУПИТЬ</button>
-                    <button type=" " class="in-bookmar ">В ЗАКЛАДКИ</button>
-                </li> -->
+             
             </ul>
             <ul class="number-list-popular-products ">
                 <li> <a href="# " class="number-list-popular-products-item "> 1</a></li>
@@ -290,10 +291,10 @@
                 <address class="footer-address "> г.Санкт-Петербург, наб.Реки Карповки, 5 лит П <br> <a class="phone-number " href="tel class="delete-price" :+78005558628 "> +7 800 555-86-28</a>
 </address>
                 <ul class="footer-navigation-bottom ">
-                    <li class="item-nav-bottom ">Материалы</li>
-                    <li class="item-nav-bottom ">Техника</li>
-                    <li class="item-nav-bottom ">Инструмент</li>
-                    <li class="item-nav-bottom ">Спецпредложения</li>
+                    <li class="item-nav-bottom "> <a href=""> Материалы</a></li>
+                    <li class="item-nav-bottom "> <a href=""> Техника</a></li>
+                    <li class="item-nav-bottom "> <a href=""> Инструмент</a></li>
+                    <li class="item-nav-bottom "> <a href=""> Спецпредложения</a></li>
                 </ul>
             </section>
         </div>
@@ -342,12 +343,13 @@
             </div>
         </div>
     </footer>
-    <section>
+    <section class="modal visually-hidden">
         <h2> <img src="img/icons/icon-shape.svg " width="66 " height="66 "> ТОВАР ДОБАВЛЕН В КОРЗИНУ!</h2>
         <button type="button ">Оформить заказ</button>
         <button type="button ">Продолжить покупки</button>
-        <button type="button "> <img src="img/icons/icon-close.svg " width="20,97 " height="20,97 " alt="Закрыть "></button>
+        <button type="button " class="exit-modal"> <img src="img/icons/icon-close.svg " width="20,97 " height="20,97 " alt="Закрыть "></button>
     </section>
+    <script src="addtobasket.js"></script>
 </body>
 
 </html>
